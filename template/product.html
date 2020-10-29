@@ -1,0 +1,367 @@
+﻿{% load static %}
+
+<!DOCTYPE html >
+
+<html>
+
+<head>
+	<title>Pet Shop</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
+	<!--[if IE 6]>
+		<link href="{% static 'css/ie6.css' %}" rel="stylesheet" type="text/css" />
+	<![endif]-->
+	<!--[if IE 7]>
+        <link href="{% static 'css/ie7.css' %}" rel="stylesheet" type="text/css" />
+	<![endif]-->
+
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+		<!-- favicon
+		============================================ -->
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+
+		<!-- Bootstrap CSS
+		============================================ -->
+        <link rel="stylesheet"  href="{% static 'css/bootstrap.min.css' %}">
+
+        <!-- Nivo slider CSS
+		============================================ -->
+		<link rel="stylesheet" type="text/css" href="{% static 'lib/custom-slider/css/nivo-slider.css' %}" media="screen" />
+		<link rel="stylesheet" type="text/css" href="{% static 'lib/custom-slider/css/preview.css' %}" media="screen" />
+
+		<!-- Fontawsome CSS
+		============================================ -->
+        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+
+        <!-- material iconic CSS
+		============================================ -->
+        <link rel="stylesheet" href="{% static 'css/material-design-iconic-font.css' %}">
+        <link rel="stylesheet" href="{% static 'css/material-design-iconic-font.min.css' %}">
+
+		<!-- owl.carousel CSS
+		============================================ -->
+        <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+
+		<!-- jquery-ui CSS
+		============================================ -->
+        <link rel="stylesheet" href="{% static 'css/jquery-ui.css' %}">
+
+		<!-- meanmenu CSS
+		============================================ -->
+        <link rel="stylesheet" href="{% static 'css/meanmenu.min.css' %}">
+
+		<!-- animate CSS
+		============================================ -->
+        <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+
+
+        <!-- Color Switcher CSS
+		============================================ -->
+        <link rel="stylesheet" href="{% static 'css/color.css' %}">
+        <link rel="stylesheet" href="{% static 'css/color-switcher.css' %}">
+
+        <!-- Animate headline CSS
+		============================================ -->
+        <link rel="stylesheet" href="{% static 'css/animate-heading.css' %}">
+        <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+
+		<!-- Video CSS
+		============================================ -->
+        <link rel="stylesheet" href="{% static 'css/jquery.mb.YTPlayer.css'}">
+
+		<!-- style CSS
+		============================================ -->
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+
+		<!-- responsive CSS
+		============================================ -->
+        <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+
+		<!-- modernizr JS
+		============================================ -->
+        <script src="{% static 'js/vendor/modernizr-2.8.3.min.js' %}"></script>
+
+        <!-- Color Css Files Start -->
+        <link rel="alternate stylesheet" type="text/css" href="{% static 'switcher/color-one.css' %}" title="color-one" media="screen" />
+        <link rel="alternate stylesheet" type="text/css" href="{% static 'switcher/color-two.css' %}" title="color-two" media="screen" />
+        <link rel="alternate stylesheet" type="text/css" href="{% static 'switcher/color-three.css' %}" title="color-three" media="screen" />
+        <link rel="alternate stylesheet" type="text/css" href="{% static 'switcher/color-four.css' %}" title="color-four" media="screen" />
+        <link rel="alternate stylesheet" type="text/css" href="{% static 'switcher/color-five.css' %}" title="color-five" media="screen" />
+        <link rel="alternate stylesheet" type="text/css" href="{% static 'switcher/color-six.css' %}" title="color-six" media="screen" />
+        <link rel="alternate stylesheet" type="text/css" href="{% static 'switcher/color-seven.css' %}" title="color-seven" media="screen" />
+        <link rel="alternate stylesheet" type="text/css" href="{% static 'switcher/color-eight.css' %}" title="color-eight" media="screen" />
+        <link rel="alternate stylesheet" type="text/css" href="{% static 'switcher/color-nine.css' %}" title="color-nine" media="screen" />
+        <link rel="alternate stylesheet" type="text/css" href="{% static 'switcher/color-ten.css' %}" title="color-ten" media="screen" />
+        <link rel="alternate stylesheet" type="text/css" href="{% static 'switcher/color-ten.css' %}" title="color-ten" media="screen" />
+        <link rel="alternate stylesheet" type="text/css" href="{% static 'switcher/pattren1.css' %}" title="pattren1" media="screen" />
+        <link rel="alternate stylesheet" type="text/css" href="{% static 'switcher/pattren2.css' %}" title="pattren2" media="screen" />
+        <link rel="alternate stylesheet" type="text/css" href="{% static 'switcher/pattren3.css' %}" title="pattren3" media="screen" />
+        <link rel="alternate stylesheet" type="text/css" href="{% static 'switcher/pattren4.css' %}" title="pattren4" media="screen" />
+        <link rel="alternate stylesheet" type="text/css" href="{% static 'switcher/pattren5.css' %}" title="pattren5" media="screen" />
+        <link rel="alternate stylesheet" type="text/css" href="{% static 'switcher/background1.css' %}" title="background1" media="screen" />
+        <link rel="alternate stylesheet" type="text/css" href="{% static 'switcher/background2.css' %}" title="background2" media="screen" />
+        <link rel="alternate stylesheet" type="text/css" href="{% static 'switcher/background3.css' %}" title="background3" media="screen" />
+        <link rel="alternate stylesheet" type="text/css" href="{% static 'switcher/background4.css' %}" title="background4" media="screen" />
+        <link rel="alternate stylesheet" type="text/css" href="{% static 'switcher/background5.css' %}" title="background5" media="screen" />
+        <!-- Color Css Files End -->
+</head>
+
+<body>
+
+
+			<div id="header2">
+					           		<!--<span href="index.html" id="logo" style="font-size:30px">宠物商城</span>-->
+
+	           		<a href="index.html" id="logo"><img src="{% static 'images/logo.gif' %}" width="310" height="114" alt="" title=""></a>
+				<div>
+				<ul class="navigation">
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="pet_introduce.html">Pet Introduction</a></li>
+						<li><a href="product.html">Pet Shop</a></li>
+						<li><a href="doctor.html">Pet Doctor</a></li>
+					</ul>
+					</div>
+			</div>
+
+<div id="banner">
+        <div class="as-mainwrapper">
+            <div class="bg-white">
+
+                <div class="shop-area mt-90">
+                    <div class="container">
+                        <div class="row">
+                            <div class="shop-item-filter">
+                                <div class="col-lg-4 col-md-3 col-sm-5 col-xs-5">
+                                    <div class="shop-tab clearfix">
+                                        <!-- Nav tabs -->
+                                        <!--<ul role="tablist">-->
+                                            <!--<li role="presentation" class="active"><a data-toggle="tab" role="tab" aria-controls="grid" class="grid-view" href="#grid"><i class="fa fa-th"></i></a></li>-->
+                                            <!--<li role="presentation"><a data-toggle="tab" role="tab" aria-controls="list" class="list-view" href="#list"><i class="fa fa-list"></i></a></li>-->
+                                        <!--</ul>-->
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-5 hidden-sm hidden-xs"><div class="filter-by">
+
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-7 col-xs-7">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+
+                            <div class="col-xs-12 col-width">
+                                        <div class="single-product mb-30">
+                                            <div class="single-product-item clearfix">
+                                                <div class="single-product-img clearfix">
+                                                    <a href="https://orijen.ca/en_CA/for-cats-2/cat-and-kitten/ns-ori-catkitten.html">
+                                                        <img class="primary-image" src="{% static 'img/product/11.jpg' %}" alt="">
+                                                    </a>
+                                                    <div class="wish-icon-hover text-center clearfix">
+
+                                                    </div>
+                                                </div>
+                                                <div class="single-product-info clearfix">
+                                                    <h3><a href="https://orijen.ca/en_CA/for-cats-2/cat-and-kitten/ns-ori-catkitten.html">Orijen Cat & Kitten Food</a></h3>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                                                <div class="col-xs-12 col-width">
+                                                                <div class="single-product mb-30">
+                                                                    <div class="single-product-item clearfix">
+                                                <div class="single-product-img clearfix">
+                                                    <a href="https://perromart.com.sg/products/paw-made-essentials-wood-base-ceramic-bowl-grey-2-sizes">
+                                                        <img class="primary-image" src="{% static 'img/product/12.png' %}" alt="">
+                                                    </a>
+                                                    <div class="wish-icon-hover text-center clearfix">
+
+                                                    </div>
+                                                </div>
+                                                <div class="single-product-info clearfix">
+                                                    <h3><a href="https://perromart.com.sg/products/paw-made-essentials-wood-base-ceramic-bowl-grey-2-sizes"><br>Paw Made Essentials Wood Base Ceramic Bowl Grey 2 Sizes</a></h3>
+                                                </div>
+                                            </div>
+
+                                                                </div>
+                                                                </div>
+
+
+
+
+
+                            <div class="col-xs-12 col-width">
+                                                                <div class="single-product mb-30">
+                                                                    <div class="single-product-item clearfix">
+                                                <div class="single-product-img clearfix">
+                                                    <a href="https://perromart.com.sg/products/paw-made-up-down-mini-cat-tree-white-online-store-singapore">
+                                                        <img class="primary-image" src="{% static 'img/product/55.jpg' %}" alt="">
+                                                    </a>
+                                                    <div class="wish-icon-hover text-center clearfix">
+
+                                                    </div>
+                                                </div>
+                                                <div class="single-product-info clearfix">
+                                                    <h3><a href="https://perromart.com.sg/products/paw-made-up-down-mini-cat-tree-white-online-store-singapore"></a>Paw Made Up & Down Mini Cat Tree White</h3>
+                                                </div>
+                                            </div>
+
+                                                                </div>
+                                                                </div>
+
+
+                                                                                            <div class="col-xs-12 col-width">
+                                                                <div class="single-product mb-30">
+                                                                    <div class="single-product-item clearfix">
+                                                <div class="single-product-img clearfix">
+                                                    <a href="https://www.chewy.com/scoopfree-smart-covered-self-cleaning/dp/261383">
+                                                        <img class="primary-image" src="{% static 'img/product/66.jpg' %}" alt="">
+                                                    </a>
+                                                    <div class="wish-icon-hover text-center clearfix">
+
+                                                    </div>
+                                                </div>
+                                                <div class="single-product-info clearfix">
+                                                    <h3><a href="https://www.chewy.com/scoopfree-smart-covered-self-cleaning/dp/261383">ScoopFree Smart Covered Self-Cleaning Cat Litter Box</a></h3>
+                                                </div>
+                                            </div>
+
+                                                                </div>
+                                                                </div>
+
+                                                                <div class="col-xs-12 col-width">
+                                                                <div class="single-product mb-30">
+                                                                    <div class="single-product-item clearfix">
+                                                <div class="single-product-img clearfix">
+                                                    <a href="https://www.chewy.com/fresh-step-extreme-odor-control/dp/103445">
+                                                        <img class="primary-image" src="{% static 'img/product/77.jpg' %}" alt="">
+                                                    </a>
+                                                    <div class="wish-icon-hover text-center clearfix">
+
+                                                    </div>
+                                                </div>
+                                                <div class="single-product-info clearfix">
+                                                    <h3><a href="https://www.chewy.com/fresh-step-extreme-odor-control/dp/103445">Fresh Step Extreme Odor Control Febreze Scented Clumping Clay Cat Litter</a></h3>
+                                                </div>
+                                            </div>
+
+                                                                </div>
+                                                                </div>
+
+
+                    </div>
+                </div>
+                <!-- shop end -->
+                <!-- client area start -->
+
+                <!-- footer end -->
+            </div>
+        </div>
+        <!-- QUICKVIEW PRODUCT -->
+        <div id="quickview-wrapper">
+            <!-- Modal -->
+            <div class="modal fade" id="productModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-product">
+                                <div class="product-images">
+                                    <div class="main-image images">
+                                        <img alt="" src="{% static 'img/product/static2.jpg' %}">
+                                    </div>
+                                </div><!-- .product-images -->
+
+                                <div class="product-info">
+                                    <h1>Diam quis cursus</h1>
+                                    <div class="price-box">
+                                        <p class="price"><span class="special-price"><span class="amount">$132.00</span></span></p>
+                                    </div>
+                                    <a href="shop.html" class="see-all">See all features</a>
+                                    <div class="quick-add-to-cart">
+                                        <form method="post" class="cart">
+                                            <div class="numbers-row">
+                                                <input type="number" id="french-hens" value="3">
+                                            </div>
+                                            <button class="single-add-to-cart-button" type="submit">Add to cart</button>
+                                        </form>
+                                    </div>
+                                    <div class="quick-desc">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum.
+                                    </div>
+                                    <div class="social-sharing">
+                                        <div class="widget widget_socialsharing_widget">
+                                            <h3 class="widget-title-modal">Share this product</h3>
+                                            <ul class="social-icons">
+                                                <li><a target="_blank" title="Facebook" href="#" class="facebook social-icon"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a target="_blank" title="Twitter" href="#" class="twitter social-icon"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a target="_blank" title="Pinterest" href="#" class="pinterest social-icon"><i class="fa fa-pinterest"></i></a></li>
+                                                <li><a target="_blank" title="Google +" href="#" class="gplus social-icon"><i class="fa fa-google-plus"></i></a></li>
+                                                <li><a target="_blank" title="LinkedIn" href="#" class="linkedin social-icon"><i class="fa fa-linkedin"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div><!-- .product-info -->
+                            </div><!-- .modal-product -->
+                        </div><!-- .modal-body -->
+                    </div><!-- .modal-content -->
+                </div><!-- .modal-dialog -->
+            </div>
+            <!-- END Modal -->
+        </div>
+        <!-- END QUICKVIEW PRODUCT -->
+
+       	<!-- jquery
+		============================================ -->
+        <!-- Color Switcher -->
+        <div class="ec-colorswitcher">
+            <h3>Style Switcher</h3>
+            <div class="ec-switcherarea">
+                <h6>Select Layout</h6>
+                <div class="layout-btn">
+                    <a href="#" class="ec-boxed"><span>Boxed</span></a>
+                    <a href="#" class="ec-wide"><span>Wide</span></a>
+                </div>
+                <h6>Chose Color</h6>
+                <ul class="ec-switcher">
+                    <li><a href="#" class="cs-color-1 styleswitch" data-rel="color-one"></a></li>
+                    <li><a href="#" class="cs-color-2 styleswitch" data-rel="color-two"></a></li>
+                    <li><a href="#" class="cs-color-3 styleswitch" data-rel="color-three"></a></li>
+                    <li><a href="#" class="cs-color-4 styleswitch" data-rel="color-four"></a></li>
+                    <li><a href="#" class="cs-color-5 styleswitch" data-rel="color-five"></a></li>
+                    <li><a href="#" class="cs-color-6 styleswitch" data-rel="color-six"></a></li>
+                    <li><a href="#" class="cs-color-7 styleswitch" data-rel="color-seven"></a></li>
+                    <li><a href="#" class="cs-color-8 styleswitch" data-rel="color-eight"></a></li>
+                    <li><a href="#" class="cs-color-9 styleswitch" data-rel="color-nine"></a></li>
+                    <li><a href="#" class="cs-color-10 styleswitch" data-rel="color-ten"></a></li>
+                </ul>
+                <div class="ec-pattren">
+                    <h6>Chose Pattren</h6>
+                    <div class="pattren-wrap">
+                        <a href="#" data-rel="pattren1" class="styleswitch"><img src="{% static 'img/ec-pattren/pattren1.jpg' %}" alt=""></a>
+                        <a href="#" data-rel="pattren2" class="styleswitch"><img src="{% static 'img/ec-pattren/pattren2.jpg' %}" alt=""></a>
+                        <a href="#" data-rel="pattren3" class="styleswitch"><img src="{% static 'img/ec-pattren/pattren3.jpg' %}" alt=""></a>
+                        <a href="#" data-rel="pattren4" class="styleswitch"><img src="{% static 'img/ec-pattren/pattren4.jpg' %}" alt=""></a>
+                        <a href="#" data-rel="pattren5" class="styleswitch"><img src="{% static 'img/ec-pattren/pattren5.jpg' %}" alt=""></a>
+                    </div>
+                </div>
+                <div class="ec-background">
+                    <h6>Chose Background</h6>
+                    <div class="background-wrap">
+                        <a href="#" data-rel="background1" class="styleswitch"><img src="{% static 'img/ec-background/bg-1.jpg' %}" alt=""></a>
+                        <a href="#" data-rel="background2" class="styleswitch"><img src="{% static 'img/ec-background/bg-2.jpg' %}" alt=""></a>
+                        <a href="#" data-rel="background3" class="styleswitch"><img src="{% static 'img/ec-background/bg-3.jpg' %}" alt=""></a>
+                        <a href="#" data-rel="background4" class="styleswitch"><img src="{% static 'img/ec-background/bg-4.jpg' %}" alt=""></a>
+                        <a href="#" data-rel="background5" class="styleswitch"><img src="{% static 'img/ec-background/bg-5.jpg' %}" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
